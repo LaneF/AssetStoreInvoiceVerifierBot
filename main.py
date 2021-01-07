@@ -46,7 +46,7 @@ async def on_message(message):
       await message.channel.send('*Failed access to Store API. Contact administrator.*')
       return
 
-    # getting 403 means they API Key is wrong or the URL is corrupted somehow.
+    # getting 500 means the asset store could not handle the input
     if "500 Internal Server Error" in response.text:
       await message.channel.send(f'<@{message.author.id}> provided input that broke the Store API. Try a valid invoice number (not order number).')
       return
