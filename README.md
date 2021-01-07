@@ -30,5 +30,8 @@ Check out the video for details on how that all works. It's a very good tutorial
 4. The results it gets back determine if it is either a) broken, b) refunded, or c) valid.
 5. It will respond appropriately, and if c) then assign a role that is by default named "Verified".
 
+# Security
+The bot reads messages that are posted to the channels and deletes them when a verification message is posted, but note that the message is indeed already posted in the channel. This means that there is a possibility that someone could lurk/scrub the messages to obtain invoice numbers and then feign ownership later. Since there is no implementation for tracking which invoices are already verified, this may be an issue for you - particularly if you use the role as a gate to premier support channels.
+
 # Recommendations
 This is a simple personal bot using free online services. It costs nothing and will probably work fine for a lot of cases. If you need something more reliable you should probably consider rolling your own on a custom site you own and migrate responsibility for the service over to things you have more control over. This works, but it is admittedly a little smelly.
