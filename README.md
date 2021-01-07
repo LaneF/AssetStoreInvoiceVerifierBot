@@ -26,7 +26,7 @@ Check out the video for details on how that all works. It's a very good tutorial
 # Process of the bot and interfacing with it
 1. A user in your server writes `$verify ` followed by an invoice number in a message
 2. The bot reads every message in the server and looks to see if they start with `$verify`.
-3. If it does, then the bot will extract the invoice number and try to send it to the Asset Store API.
+3. If it does, then the bot will delete the message, extract the invoice number and try to send it to the Asset Store API.
 4. The results it gets back determine if it is either a) broken, b) refunded, or c) valid.
 5. It will respond appropriately, and if c) then assign a role that is by default named "Verified".
 
