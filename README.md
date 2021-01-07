@@ -1,12 +1,14 @@
 # Asset Store Invoice Verifier Bot
 This is a Discord bot that will verify Invoice Numbers from the Unity Asset Store API and assign a role to the user submitting the invoice for verification. You need to create your own bot, setup services and fork the code so you can add your own api key. If someone has ideas on improvements, feel free to reach out about them.
 
+![] (verifyTests.gif)
+
 # Requirements
-Your own discord bot with proper permissions. (this is not a shared bot)
-Your own Repl.it of this code.
-Your own uptimerobot.com to ping the bot.
-Your own API Key and Bot Token added to your repl.it code.
-A "Verified" role in your server (you can change this, or do whatever you want, this is just default)
+* Your own discord bot with proper permissions. (this is not a shared bot)
+* Your own Repl.it of this code.
+* Your own uptimerobot.com to ping the bot.
+* Your own API Key and Bot Token added to your repl.it code.
+* A "Verified" role in your server (you can change this, or do whatever you want, this is just default)
 
 # How To Setup
 This bot is based on the nice tutorial here that covers how to setup the services: https://www.youtube.com/watch?v=SPTfmiYiuok
